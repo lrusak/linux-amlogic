@@ -24,6 +24,10 @@ obj-$(CONFIG_SND_AML_M8_SOC) += snd-soc-aml-spdif-codec.o
 snd-soc-aml-m8-objs := aml_m8.o
 obj-$(CONFIG_SND_AML_M8) += snd-soc-aml-m8.o
 
+# Odroid DAC support
+snd-soc-odroid-dac-objs := odroid_dac.o
+obj-$(CONFIG_SND_ODROID_DAC) += snd-soc-odroid-dac.o
+
 #AML G9TV Machine support
 snd-soc-aml-g9tv-objs := aml_g9tv.o
 obj-$(CONFIG_SND_AML_M8) += snd-soc-aml-g9tv.o

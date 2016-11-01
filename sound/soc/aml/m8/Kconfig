@@ -11,6 +11,11 @@ menuconfig SND_AML_M8
 	select SND_SOC_AMLT9015
 	select SND_SOC_AMLT9015S
 
+menuconfig SND_ODROID_DAC
+	tristate "ODROID-SND-DAC card"
+	depends on SND_AML_M8_SOC
+	select SND_SOC_PCM5102
+
 if SND_AML_M8
 
 config SND_AML_SPLIT_MODE
