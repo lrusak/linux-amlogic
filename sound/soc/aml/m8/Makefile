@@ -28,6 +28,10 @@ obj-$(CONFIG_SND_AML_M8) += snd-soc-aml-m8.o
 snd-soc-odroid-dac-objs := odroid_dac.o
 obj-$(CONFIG_SND_ODROID_DAC) += snd-soc-odroid-dac.o
 
+# Odroid DAC2 support
+snd-soc-odroid-dac2-objs := odroid_dac2.o
+obj-$(CONFIG_SND_ODROID_DAC2) += snd-soc-odroid-dac2.o
+
 #AML G9TV Machine support
 snd-soc-aml-g9tv-objs := aml_g9tv.o
 obj-$(CONFIG_SND_AML_M8) += snd-soc-aml-g9tv.o

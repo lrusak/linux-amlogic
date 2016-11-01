@@ -668,6 +668,14 @@
 		};
 	};
 
+	odroid_dac2{
+		compatible = "sound_card, odroid_dac2";
+		aml,sound_card = "ODROID-DAC2";
+		pinctrl-names = "odroid_i2s";
+		pinctrl-0 = <&audio_pins>;
+		status = "okay";
+	};
+
 	/* END OF AUDIO board specific */
 
 	gpio_keypad{
